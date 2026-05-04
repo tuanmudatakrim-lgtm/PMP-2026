@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Login - PMP 2026</title>
+    <style>
+        /* RESET TOTAL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f0f2f1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            overflow-x: hidden; /* Biar gak bisa geser kanan-kiri di HP */
+        }
+
+        /* HEADER RESPONSIVE */
+        header {
+            background-color: #125B34;
+            color: white;
+            padding: 25px 15px;
+            text-align: center;
+            width: 100%;
+            border-bottom: 4px solid #F2C94C;
+        }
+
+        header img {
+            height: 60px;
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+
+        header h2 {
+            font-size: 1.1rem; /* Ukuran font lebih kecil biar gak tumpuk di HP */
+            letter-spacing: 1px;
+        }
+
+        /* CONTAINER UTAMA */
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+            flex: 1;
+        }
+
+        /* KOTAK LOGIN */
+        .login-box {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            border-top: 6px solid #125B34;
+            width: 100%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .login-box h3 {
+            color: #125B34;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #444;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: 0.3s;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #125B34;
+        }
+
+        .btn-masuk {
+            display: block;
+            background-color: #125B34;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 4px 6px rgba(18, 91, 52, 0.2);
+            transition: 0.3s;
+        }
+
+        .btn-masuk:active {
+            transform: scale(0.98);
+        }
+
+        /* MATIIN SIDEBAR SECARA TOTAL DI HALAMAN INI */
+        nav { display: none !important; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo_iai.jpg" alt="Logo">
+        <h2>INFORMASI & ADMINISTRASI PMP 2026</h2>
+    </header>
+
+    <main>
+        <div class="login-box">
+            <h3>Silakan Masuk</h3>
+            
+            <div class="input-group">
+                <label>Username</label>
+                <input type="text" placeholder="Nama lu...">
+            </div>
+            
+            <a href="dashboard.html" class="btn-masuk">MASUK SEKARANG</a>
+        </div>
+    </main>
+
+</body>
+</html>
